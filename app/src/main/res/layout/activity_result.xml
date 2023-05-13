@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/txtkodebarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Kode Barang : "
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Nama Barang : "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:id="@+id/txtnamabarang"
+        android:layout_below="@id/txtkodebarang"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Jumlah Barang : "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:id="@+id/txtjumlahbarang"
+        android:layout_below="@id/txtnamabarang"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Harga Barang : "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:id="@+id/txthargabarang"
+        android:layout_below="@id/txtjumlahbarang"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Jenis Pembayaran : "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:id="@+id/txtjenispembayaran"
+        android:layout_below="@id/txthargabarang"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/txtbonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtjenispembayaran"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Bonus Barang : "
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtkurir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtbonus"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Kurir  : "
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/txttanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtkurir"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tanggal Pembelian : "
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/txttagihan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txttanggal"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tagihan : "
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</RelativeLayout>

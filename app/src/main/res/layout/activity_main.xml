@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Pembelian Barang"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/txttitle"/>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tbl1"
+    android:layout_below="@id/txttitle"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    >
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Kode Barang : "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:id="@+id/txtkodebarang"
+            />
+
+        <EditText
+            android:id="@+id/editkode"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Nama Barang : "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:id="@+id/txtnamabarang"
+            />
+
+        <EditText
+            android:id="@+id/editnamabarang"
+            android:layout_width="300dp"
+            android:layout_height="50dp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Jumlah Barang : "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:id="@+id/txtjumlahbarang"
+            />
+
+        <EditText
+            android:id="@+id/editjumlahbarang"
+            android:layout_width="300dp"
+            android:layout_height="50dp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Harga Barang : "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:id="@+id/txthargabarang"
+            />
+
+        <EditText
+            android:id="@+id/edithargabarang"
+            android:layout_width="300dp"
+            android:layout_height="50dp"/>
+    </TableRow>
+</TableLayout>
+
+    <TextView
+        android:id="@+id/txtjenispembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tbl1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Jenis Pembayaran : "
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgjenispembayaran"
+        android:layout_below="@id/txtjenispembayaran"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kredit"
+            android:id="@+id/rdkredit"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash"
+            android:id="@+id/rdcash"
+            android:layout_marginLeft="20dp"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtbonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgjenispembayaran"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Bonus : "
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbl2"
+        android:layout_below="@id/txtbonus"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+        <TableRow>
+            <CheckBox
+                android:text="Payung"
+                android:id="@+id/chkpayung"
+                android:layout_marginRight="10dp"
+                />
+            <CheckBox
+                android:id="@+id/chkkulkas"
+                android:text="Kulkas"
+                android:layout_marginRight="10dp"/>
+            <CheckBox
+                android:id="@+id/chktv"
+                android:text="TV"
+                android:layout_marginRight="10dp"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbl3"
+        android:layout_below="@id/tbl2"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+        <TableRow>
+            <TextView
+                android:id="@+id/txtkurir"
+                android:text="Kurir : "
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+            <Spinner
+                android:id="@+id/spinkurir"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttanggal"
+        android:text="Tanggal Pembelian : "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_below="@id/tbl3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tanggal"
+        android:layout_below="@id/txttanggal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:datePickerMode="spinner"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Pesan"
+        android:id="@+id/btnpesan"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tanggal"
+        />
+</RelativeLayout>
+</ScrollView>
